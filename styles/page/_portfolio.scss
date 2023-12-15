@@ -1,0 +1,64 @@
+@use '../globals/mq' as *;
+@use '../globals/mixin' as *;
+
+@use '../parts/hero-slider' as *;
+
+.portfolio {
+    margin-bottom: 50px;
+
+    &__inner {
+        background-color: #ffffff;
+        max-width: 900px;
+        margin: 100px auto;
+        padding: 0 30px 60px 30px;
+        border-radius: 10px;
+        box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; 
+        @include max(md) {
+            max-width: 700px;
+            margin-left: 80px;
+            margin-right: 80px;
+
+        }
+    }
+
+    &__title {
+        font-size: 30px;
+        margin-left: 50px;
+        color: #2F4F4F;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    &__box {
+        margin-bottom: 50px;
+    }
+
+    &__h2 {
+        letter-spacing: 0.1em;
+    }
+
+    &__h3 {
+        margin-bottom: 20px;
+        margin-left: 30px;
+        font-size: 24px;
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+        display: inline-block;
+        width: 200px;
+        background-color: #F5FFFA;
+        color: #2F4F4F;
+        
+        box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    }
+
+    &__p {
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #2F4F4F;
+        border-bottom: #2F4F4F 1px solid;
+    }
+
+}

@@ -1,0 +1,59 @@
+@use '../globals/mq' as *;
+@use '../globals/mixin' as *;
+
+@use '../parts/appear' as *;
+
+.profile {
+    margin-bottom: 50px;
+    @include max(md) {
+        margin-bottom: 100px;
+
+    }
+
+    &__inner{
+        background-color: #ffffff;
+        max-width: 900px;
+        margin: 0 auto;
+        border-radius: 10px;
+        box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+        
+        @include max(md) {
+            margin-left: 50px;
+            margin-right: 50px;
+
+        }
+    }
+
+    &__img{
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-top: 30px;
+    }
+
+    &__h2{
+        font-size: 30px;
+        margin-left: 70px;
+        color: #2F4F4F;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__p{
+        font-size: 16px;
+        margin-left: 100px;
+        color: #2F4F4F;
+       padding-bottom: 30px;
+    }
+}
+
+// プロフィール画像
+.pro-img {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto ;
+    border-radius: 50%;
+    }
