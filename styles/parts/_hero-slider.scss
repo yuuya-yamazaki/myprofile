@@ -1,5 +1,7 @@
 //スライドアニメーション//
 // スライド時のアクション
+@use '../globals/mixin' as *;
+
 .cover-slide {
     position: relative;
     overflow: hidden;
