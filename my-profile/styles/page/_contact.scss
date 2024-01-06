@@ -1,0 +1,28 @@
+@use '../globals/mq' as *;
+
+.contact {
+   height: 200px;
+
+    &__inner {
+        background-color: #F0FFF0;
+        max-width: 1100px;
+        margin: 100px auto 100px;
+        padding: 0 30px 60px 30px;
+        height: 100px;
+        border-radius: 10px;
+        box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; 
+        @include max(md) {
+            margin-left: 80px;
+            margin-right: 80px;
+
+        }
+    }
+
+    p {
+        font-size: 30px;
+        color: #2F4F4F;
+        line-height: 100px;
+        
+    }
+
+}
